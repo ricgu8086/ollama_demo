@@ -12,11 +12,11 @@ Ollama Demo
 
 # About
 
-This repository shows how to use open source LLMs in local, leaning on Ollama.
-Ollama is an inference server that makes it very easy to use many different LLMs.
+This repository shows how to use open source **LLMs in local**, leaning on Ollama.
+**Ollama is an inference server** that makes it very easy to use many different LLMs.
 We can use it both as a CLI tool or as a library in a python script.
 
-Here we will use the Microsoft's Phi 3 model, a very powerful Small Language Model (SML) that takes only 2.2 Gb of disk and can run in laptops with no GPU.
+Here we will use the **Microsoft's Phi 3 model**, a very powerful Small Language Model (**SML**) that takes only 2.2 Gb of disk and can run in laptops with no GPU.
 
 # Requirements
 
@@ -30,7 +30,6 @@ With just 3 lines of code you can download ollama and start talking to the model
 
 ```bash
 docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
-
 
 docker exec -it ollama /bin/bash
 
@@ -58,7 +57,7 @@ pip install ollama
 
 ## Prepare Ollama
 
-You need to have Ollama running. There is a specific *serve* command available to expose an HTTP server with a REST API. However this is automatically launched every time you run Ollama as a CLI Tool, so to launch it you just need to execute the 2 commands listed above (docker run... and docker exec...) and that's all.
+You need to have Ollama running. There is a specific *serve* command available to expose an HTTP server with a REST API. However this is automatically launched every time you run Ollama as a CLI Tool, so to launch it you just need to execute the 2 commands listed above (*docker run*... and *docker exec*...) and that's all.
 
 ## Notebooks
 
