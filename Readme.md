@@ -29,7 +29,7 @@ While Anaconda is not a hard requirement, this guide will use it for creating a 
 With just 3 lines of code you can download ollama and start talking to the model using the CLI.
 
 ```bash
-docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
+docker run -d -v ~/.ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
 
 docker exec -it ollama /bin/bash
 
@@ -49,10 +49,9 @@ Note: although Phi 3 is not multi-lingual and is mainly based in english, it may
 You can install the environment like this:
 
 ```bash
-conda create -n "ollama_demo" python=3.11
+conda create -n "ollama_demo" python=3.12
 conda activate "ollama_demo"
-pip install ipykernel
-pip install ollama
+pip install -r requirements.txt
 ```
 
 ## Prepare Ollama
