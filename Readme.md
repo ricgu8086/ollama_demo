@@ -16,7 +16,7 @@ This repository shows how to use open source **LLMs in local**, leaning on Ollam
 **Ollama is an inference server** that makes it very easy to use many different LLMs.
 We can use it both as a CLI tool or as a library in a python script.
 
-Here we will use the **Microsoft's Phi 3 model**, a very powerful Small Language Model (**SML**) that takes only 2.2 Gb of disk and can run in laptops with no GPU.
+Here we will use the **Microsoft's Phi 4 Mini model**, a very powerful Small Language Model (**SML**) that takes only 2.5 Gb of disk and can run in laptops with no GPU.
 
 # Requirements
 
@@ -39,7 +39,7 @@ ollama run phi4-mini
 For testing purposes you can use this:
 > Dime en menos de 20 palabras tu actor favorito
 
-Note: although Phi 3 is not multi-lingual and is mainly based in english, it may complete some tasks in other languages with decent results.
+Note: Phi 4 increased multilingual support compared to its predecessor (Phi 3 had not support) but it's mainly based in english. It can complete some tasks in other languages with decent results.
 
 
 # Launch Python examples
