@@ -1,6 +1,11 @@
 Ollama Demo
 -----------
 
+<p align="center">
+  <img src="./ollama%20logo.png" alt="Ollama Logo" width="400"/>
+</p>
+
+
 - [About](#about)
 - [Requirements](#requirements)
 - [Installing Ollama](#installing-ollama)
