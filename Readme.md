@@ -33,7 +33,7 @@ docker run -d -v ~/.ollama:/root/.ollama -p 11434:11434 --name ollama ollama/oll
 
 docker exec -it ollama /bin/bash
 
-ollama run phi3
+ollama run phi4-mini
 ```
 
 For testing purposes you can use this:
@@ -49,9 +49,10 @@ Note: although Phi 3 is not multi-lingual and is mainly based in english, it may
 You can install the environment like this:
 
 ```bash
-conda create -n "ollama_demo" python=3.12
-conda activate "ollama_demo"
+conda create -n "ollama_demo_3_12" python=3.12
+conda activate "ollama_demo_3_12"
 pip install -r requirements.txt
+python -m ipykernel install --user --name ollama_demo_3_12 --display-name "Python (ollama_demo_3_12)
 ```
 
 ## Prepare Ollama
